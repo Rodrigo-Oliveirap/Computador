@@ -74,4 +74,13 @@ public class Desktop extends Computador {
     // Other methods
     //
 
+    protected void desk() {
+      
+        System.out.print("O Processador do sistema é um " + Processador);
+        System.out.println("Que se encontra em uma " + Placa);
+        System.out.println(" juntamente com uma " + GPU);
+        System.out.print("A RAM é de " + Memoria + "GB");
+        System.out.println(" e possui HD/SSD com " + Armazenamento + "GB de armazenamento");              
+        
+    }
 }

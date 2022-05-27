@@ -1,3 +1,4 @@
-com/mycompany/computador/Desktop.class
-com/mycompany/computador/Notebook.class
-com/mycompany/computador/Computador.class
+com\mycompany\computador\Computador.class
+com\mycompany\computador\Rodar.class
+com\mycompany\computador\Desktop.class
+com\mycompany\computador\Notebook.class

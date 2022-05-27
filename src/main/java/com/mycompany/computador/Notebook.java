@@ -71,4 +71,14 @@ public class Notebook extends Computador {
     //
     // Other methods
     //
+    
+    protected void note() {
+        
+        System.out.print("O Processador do sistema é um " + Processador);
+        System.out.println(" e a placa de video do é uma " + GPU);
+        System.out.print("A RAM é de " + Memoria + "GB");
+        System.out.println(" e possui HD/SSD com " + Armazenamento + "GB de armazenamento");
+        System.out.println("A tela integrada possui um tamanho de " + Tela + " polegadas");
+        System.out.println("E possui também uma bateria de " + Bateria + " mAh");
+    }
 }

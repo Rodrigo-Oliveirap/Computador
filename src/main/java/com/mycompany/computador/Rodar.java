@@ -19,11 +19,9 @@ public class Rodar {
         
         //inicia o scanner
         Scanner input = new Scanner(System.in);
-        Computador computador1 = new Computador();
         
         //variáveis
         int Tipo;
-        String Placa;
         
         System.out.println("---Cadastro Computador/Celular/Notebook---");
         System.out.println("Entre com o tipo de dispositivo: ");
@@ -32,50 +30,87 @@ public class Rodar {
         
         Tipo = input.nextInt();
         
+        
+
+        
         while (Tipo != 2 && Tipo != 1){
             
             System.out.println("Tipo Inválido, informe novamente");
             Tipo = input.nextInt();
             
             }
-        
-        computador1.setTipo(Tipo);
                                 
         //esvazia buffer para receber outro tipo de variável
         input.nextLine();
         
-        System.out.println("Entre com o Processador: ");
-        computador1.setProcessador(input.nextLine());
-
-        System.out.println("Entre com a GPU: ");
-        computador1.setGPU(input.nextLine());       
-        
-        System.out.println("Entre com a memória em GB: ");
-        computador1.setMemoria(input.nextFloat());
-        
-        System.out.println("Entre com o armazenamento em GB: ");
-        computador1.setArmazenamento(input.nextFloat());
-        
         switch (Tipo){
             case 1:
+                
+                Desktop desktop1 = new Desktop();
+                
+                 desktop1.setTipo(Tipo);
+                
+                System.out.println("Entre com o Processador: ");
+                System.out.println("Exemplo: Ryzen 7 1700");
+                desktop1.setProcessador(input.nextLine());
+
+                System.out.println("Entre com a GPU: ");
+                System.out.println("Exemplo: Radeon HD 6850");
+                desktop1.setGPU(input.nextLine());       
+        
+                System.out.println("Entre com a memória em GB: ");
+                System.out.println("Exemplo: 16");
+                desktop1.setMemoria(input.nextFloat());
+        
+                System.out.println("Entre com o armazenamento em GB: ");
+                System.out.println("Exemplo: 3480");
+                desktop1.setArmazenamento(input.nextFloat());
+        
                 System.out.println("Entre com o modelo da placa mãe: ");
-                Placa = input.nextLine();
-                computador1.setPlaca(Placa);
+                System.out.println("Exemplo: B350 Tomahawk");
+                desktop1.setPlaca(input.nextLine());
+                
                 System.out.println("Informe a quantidade de Watts da fonte: ");
-                computador1.setFonte(input.nextFloat());
+                System.out.println("Exemplo: 500");
+                desktop1.setFonte(input.nextFloat());
+                
+                desktop1.desk();
             break;
-            
             case 2:
-                computador1.desktop();
+            
+                Notebook notebook1 = new Notebook();
+                
+                 notebook1.setTipo(Tipo);
+                
+                System.out.println("Entre com o Processador: ");
+                System.out.println("Exemplo: Ryzen 5 2500U");
+                notebook1.setProcessador(input.nextLine());
+
+                System.out.println("Entre com a GPU: ");
+                System.out.println("Exemplo: MX150");
+                notebook1.setGPU(input.nextLine());       
+        
+                System.out.println("Entre com a memória em GB: ");
+                System.out.println("Exemplo: 12");
+                notebook1.setMemoria(input.nextFloat());
+        
+                System.out.println("Entre com o armazenamento em GB: ");
+                System.out.println("Exemplo: 1000");
+                notebook1.setArmazenamento(input.nextFloat());
+                
+                System.out.println("Entre com o tamanho da tela em polegadas: ");
+                System.out.println("Exemplo: 15,6");
+                notebook1.setTela(input.nextFloat());
+        
+                System.out.println("Entre com a capacidade da bateria em mAh: ");
+                System.out.println("Exemplo: 4050");
+                notebook1.setBateria(input.nextFloat());
+                
+                notebook1.informar();
+            break;    
                 
         }
-        
-        computador1.informar();
-        
-        
-
-        
-        
+      
     }
     
 }

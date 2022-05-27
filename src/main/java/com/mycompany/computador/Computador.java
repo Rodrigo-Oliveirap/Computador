@@ -41,7 +41,7 @@ public class Computador {
     //
     // Accessor methods
     //
-
+    
     /**
      * Set the value of Tipo
      * @param newVar the new value of Tipo
@@ -129,16 +129,9 @@ public class Computador {
         System.out.print("O Processador do sistema é um " + Processador);
         System.out.println(" e a placa de video do é uma " + GPU);
         System.out.print("A RAM é de " + Memoria + "GB");
-        System.out.println(" e possui HD/SSD com " + Armazenamento + "GB de armazenamento");
-    }
-    
-    protected void desktop(){
+        System.out.println(" e possui HD/SSD com " + Armazenamento + "GB de armazenamento");              
         
     }
     
-    protected void notebook(){
-        System.out.println("batata");
-    }
-
 
 }
