@@ -72,10 +72,11 @@ public class Notebook extends Computador {
     // Other methods
     //
     
+    //método que informa as especificações do notebook ditas pelo usuario
     protected void note() {
         
         System.out.print("O Processador do sistema é um " + Processador);
-        System.out.println(" e a placa de video do é uma " + GPU);
+        System.out.println(" e a placa de video do notebook é uma " + GPU);
         System.out.print("A RAM é de " + Memoria + "GB");
         System.out.println(" e possui HD/SSD com " + Armazenamento + "GB de armazenamento");
         System.out.println("A tela integrada possui um tamanho de " + Tela + " polegadas");

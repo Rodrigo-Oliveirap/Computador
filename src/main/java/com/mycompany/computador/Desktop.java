@@ -73,11 +73,11 @@ public class Desktop extends Computador {
     //
     // Other methods
     //
-
+    //método que informa as especificações do desktop ditas pelo usuario
     protected void desk() {
       
         System.out.print("O Processador do sistema é um " + Processador);
-        System.out.println("Que se encontra em uma " + Placa);
+        System.out.print(" que se encontra em uma " + Placa);
         System.out.println(" juntamente com uma " + GPU);
         System.out.print("A RAM é de " + Memoria + "GB");
         System.out.println(" e possui HD/SSD com " + Armazenamento + "GB de armazenamento");              

@@ -124,14 +124,5 @@ public class Computador {
     //
     // Other methods
     //
-    protected void informar(){
-      
-        System.out.print("O Processador do sistema é um " + Processador);
-        System.out.println(" e a placa de video do é uma " + GPU);
-        System.out.print("A RAM é de " + Memoria + "GB");
-        System.out.println(" e possui HD/SSD com " + Armazenamento + "GB de armazenamento");              
-        
-    }
-    
 
 }
